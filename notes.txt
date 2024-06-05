@@ -1,0 +1,66 @@
+Types of basic-variables in Solidity
+1. String -> sequence of characters (works as a dynamic array in solidity)
+2. Addresses -> Has methods tied to it for sending money
+3. Bool -> Boolean values
+4. int -> integer, positive, negative. Has no decimal
+5. uint -> unsigned integer, positive. Has no decimal
+6. fixed/unfixed -> fixed point number and number have a decimal after it
+
+
+msg object in solidity is a public object which holds certain values about the transaction taking place =>
+msg.data
+msg.gas
+msg.sender
+msg.value
+
+*Referance types in solidity*
+1. fixed array   int[3] -->[1,2,3]   Bool[2] --> [true,false]
+2. dynamic array  int[] --> [1,2,3]  Bool[] --> [true,false]
+3. mapping      mapping(string => string);  mapping(int => bool); //mapping(keys => mapping);  used to represent many things
+4. struct    struct car{
+             string Drives;
+             string stop;
+             uint value;
+             }; // used to represent singular things 
+
+
+
+                        solidity world                         |                  ABI/JS/Web3 World            
+                Nested Dynamic Arrays                          |            No Nested Dynamic Arrays
+                                                               |                   (no dice)
+                                                               
+/*
+    const myArray = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9]
+    ];
+*/
+   we cannot pull a nested dynamic array out of solidity world to our javascript application  (limitation of communication layer between the two)
+     
+     
+require(); //Used for validation, pass a boolean expression inside the require function call if returnes false then no changes will be made to the contract, if true then the code inside the block contiunes to run as usual .  
+
+Logic behind Random number generator     
+-------------------------------------
+Current Block difficulty  |
+------------------------- |
+Current Time              |--->> SHA3 Algorithm --->> Really big number
+------------------------- |            
+Address of players        |
+------------------------- |                                                 
+
+keccak3 and sha3 are hashing algorithms
+In block.difficulty block is a global variable
+now ---> for Current time
+
+
+Logic behind the selection of the winner
+------------------------------------------
+1. Calling the rendom function
+2. Appling modulo operator
+3. % num of players in a Lottery
+4. Random number which will be generated will be between 0 and length of the players array
+
+
+.transfer()   this function is available for every address in solidity used to transfer 
