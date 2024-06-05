@@ -28,4 +28,7 @@ contract Lottery{
         require(msg.sender == Manager);
         _;
     }
+    function PlayerList() public view returns(address[]){
+        return players;
+    }
 }
