@@ -67,3 +67,13 @@ Logic behind the selection of the winner
 
 
 players = new address[](0);//creates brand new dynamic array of type address
+
+
+Function modifiers in solidity
+-------------------------------
+syntax ->
+          modifier /*(keyword)*/ name_of_modifier (){
+            //used to avoid using same logics
+            contentttttttttttttt
+            _;
+          }

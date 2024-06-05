@@ -15,8 +15,8 @@ contract Lottery{
         return uint(output);
       // return  uint(keccak256(block.difficulty , now , players));
     }
-    function pickWinner() public{
-        require(msg.sender == Manager);
+    function pickWinner() public restricetd{
+        //require(msg.sender == Manager);
 
         uint index = random() % players.length;
         address player = players[index];
@@ -24,4 +24,8 @@ contract Lottery{
         players = new address[](0);//creates brand new dynamic array of type address
     }
 
+    modifier restricetd(){
+        require(msg.sender == Manager);
+        _;
+    }
 }
