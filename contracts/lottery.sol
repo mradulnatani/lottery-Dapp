@@ -19,5 +19,7 @@ contract Lottery{
         uint index = random() % players.length;
         address player = players[index];
         player.transfer(address(this).balance);
+        players = new address[](0);//creates brand new dynamic array of type address
     }
+
 }

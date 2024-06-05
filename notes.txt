@@ -64,3 +64,6 @@ Logic behind the selection of the winner
 
 
 .transfer()   this function is available for every address in solidity used to transfer 
+
+
+players = new address[](0);//creates brand new dynamic array of type address
