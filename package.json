@@ -10,5 +10,9 @@
   "directories": {
     "test": "test"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "ganache": "^7.9.2",
+    "mocha": "^10.4.0"
+  }
 }
