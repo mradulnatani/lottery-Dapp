@@ -14,5 +14,8 @@
   "devDependencies": {
     "ganache": "^7.9.2",
     "mocha": "^10.4.0"
+  },
+  "dependencies": {
+    "solc": "^0.8.26"
   }
 }
