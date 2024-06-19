@@ -9,13 +9,14 @@ export default function main() {
       <br/>
       <span style={{padding:"100px"}}>Want to earn some heavy money?</span>
       <br/>
+      <spam style={{padding:"100px"}}>If Yes then here is a chance......</spam>
       <br/>
-
-      <button style={{width:"80px" ,marginLeft:"150px", marginRight:"50px"}} value={true}>Yes</button>
-      <button style={{width:"80px"}}value={false}>No</button>
+      <b style={{marginLeft:"100px",border:"10px"}}>Disclimer: This application is managed by the manager of the D-App company, all the care of you privacy and security will be taken care during the game.</b>
+      <br/>
+      <br/>
       <form style={{marginLeft:"200px"}}>
         <br/>
-        Enter The public key:<input type='text'></input>
+        Enter amount of Ether:<input type='text'></input>
         <button type='submit' onClick={getData} style={{margin:"10px", width:"100px"}}>Enter</button>
       </form>
     </div>

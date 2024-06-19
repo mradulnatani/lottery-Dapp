@@ -9,6 +9,7 @@ function App() {
    <Fragment>
     <Navbar/>
     <h1 className='welcomeStatement'>Welcome to The Lottery-App</h1>
+    <hr/>
     <Main/>
    </Fragment>
   );
