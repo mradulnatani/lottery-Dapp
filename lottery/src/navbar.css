@@ -1,0 +1,7 @@
+.navbarbg-body-tertiary{
+    background-color: rgb(31, 57, 22);
+    color: rgb(94, 202, 94);
+    height: 45px;
+    padding: 10px;
+    position:sticky;
+}
